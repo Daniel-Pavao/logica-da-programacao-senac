@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 8</title>
+</head>
+<body class="body-8">
+    <h1 class="titulo8">Bem-vindo ao Jogo do Numero Secreto</h1>
+    <p id="txt8">Seu objetivo sera descobrir qual e o numero secreto com apenas 3 tentativas.<br>
+    Clique em Iniciar para comecar o jogo. </p>
+    <div>
+        <button class="botao8" onclick="iniciarJogo()">Iniciar</button>
+    </div>
+    <div class="container8" id="game" style="display: none;">
+        <p>Escolha um numero entre 1 e 10:</p>
+        <div>
+            <input class="input8" type="number" id="input-palpite" min="1" max="10" placeholder="Aqui">
+        </div>
+        <div class="desgraçado">
+            <button class="botao8" id="btn-palpite" onclick="verificarPalpite()">Enviar Palpite</button>
+        </div>
+        <p id="result"></p>
+    </div>
+<script src="script.js" defer></script>
+</body>
+</html>
